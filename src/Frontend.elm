@@ -94,16 +94,27 @@ latexView model =
         [ Attr.style "font-family" "sans-serif"
         , Attr.style "padding-top" "40px"
         ]
-        [ MiniLatex.render "noSelectedId" NoDelay macros sourceText |> Html.map LatexMsg
+        [ MiniLatex.render "noSelectedId" NoDelay sourceText |> Html.map LatexMsg
         ]
 
 
 macros =
-    "\\newcommand{\\bra}{\\langle}"
+    """
+
+\\newcommand{\\bt}[1]{\\bf{#1}}
+\\newcommand{\\mca}[0]{\\mathcal{A}}
+\\end{mathmacro}
+
+
+"""
 
 
 sourceText =
     """
+
+
 Pythagoras said: $a^2 + b^2 = c^2$
+
+And said again: $a^2 + b^2 = c^2$
 
 """
