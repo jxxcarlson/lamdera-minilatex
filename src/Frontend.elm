@@ -73,7 +73,8 @@ view model =
     , body =
         [ Html.div [ Attr.style "text-align" "center", Attr.style "padding-top" "40px" ]
             [ Html.img [ Attr.src "https://lamdera.app/lamdera-logo-black.png", Attr.width 150 ] []
-            , message model
+
+            -- , message model
             , latexView model
             ]
         ]
@@ -98,23 +99,8 @@ latexView model =
         ]
 
 
-macros =
-    """
-
-\\newcommand{\\bt}[1]{\\bf{#1}}
-\\newcommand{\\mca}[0]{\\mathcal{A}}
-\\end{mathmacro}
-
-
-"""
-
-
 sourceText =
     """
-
-
 Pythagoras said: $a^2 + b^2 = c^2$
-
-And said again: $a^2 + b^2 = c^2$
 
 """
