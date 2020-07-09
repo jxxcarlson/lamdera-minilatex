@@ -73,8 +73,6 @@ view model =
     , body =
         [ Html.div [ Attr.style "text-align" "center", Attr.style "padding-top" "40px" ]
             [ Html.img [ Attr.src "https://lamdera.app/lamdera-logo-black.png", Attr.width 150 ] []
-
-            -- , message model
             , latexView model
             ]
         ]
