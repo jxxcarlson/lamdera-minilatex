@@ -101,4 +101,10 @@ sourceText =
     """
 Pythagoras said: $a^2 + b^2 = c^2$
 
+In calculus class, we learned that
+
+$$
+  \\int_0^1 x^n dx = \\frac{1}{n+1}
+$$
+
 """
