@@ -52,7 +52,7 @@ startup: {
       }
       root(doc) {
         return doc.documentElement || doc.firstChild || doc;
-      }
+      }                                                                                                                                                  
     }
 
     //

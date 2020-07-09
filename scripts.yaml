@@ -1,10 +1,8 @@
 scripts:
+
   make:
     - lamdera make src/Frontend.elm
     - lamdera make src/Backend.elm
-
+    
   live:
     - lamdera live
-
-  js-install:
-    - elm-pkg-js install jxxcarlson/elm-mathjax

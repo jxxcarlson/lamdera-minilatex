@@ -1,11 +1,12 @@
 module Frontend exposing (..)
 
+-- import Mathjax exposing (..)
+
 import Browser exposing (UrlRequest(..))
 import Browser.Navigation as Nav
 import Html
 import Html.Attributes as Attr
 import Lamdera
-import Mathjax exposing (..)
 import MiniLatex
 import MiniLatex.Edit
 import MiniLatex.Render exposing (MathJaxRenderOption(..))
